@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/04c9ae5782.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-4">
+            <h1 id="current-city">City name here</h1>
+          </div>
+          <form class="col-4" id="city-search">
+            <input type="text" placeholder="Type your city here" id="user-city"/>
+            <input type="submit" value="Search" />
+          </form>
+          <button class="col-2" id="current-location">Current Location</button>
+        </div>
+      </header>
+      <div class="row today-weather">
+        <div class="col-2 first-col">
+          <h2 id="current-day">Current Day here</h2>
+          <div class="weather-emoji">🌞</div>
+          <h2 id="current-weather-description">Weather description</h2>
+        </div>
+        <div class="col-2 second-col">
+          <h3>Current temp</h3>
+          <h2><span id="current-degrees">12</span>°</h2>
+          <a href="#" id="celsius-link" class="degree-change">C</a> |
+          <a href="#" id="farenheit-link" class="degree-change">F</a>
+        </div>
+        <div class="col-2">
+          <h5 class="high-low-temp">H:<span id="high-temp">13</span>° L:<span id="low-temp">8</span>°</h5>
+          <h5 class="wind">Wind: <span id="wind">5</span>km/hr</h5>
+          <h5 class="rain">Humidity: <span id="humidity">10</span>%</h5>
+        </div>
+      </div>
+      <section class="future-weather">
+      <div class="row future-weather">
+        <div class="col-2">
+          <p class="day-1">
+            Sat
+            <div class="emoji day-1-emoji">
+                🌧
+            </div>
+             9°
+          </p>
+        </div>
+        <div class="col-2">
+            <p class="day-2">
+            Sun
+            <div class="emoji day-2-emoji">
+                ⛅️
+            </div>
+             7°
+          </p>
+        </div>
+        <div class="col-2">
+            <p class="day-3">
+            Mon
+            <div class="emoji day-3-emoji">
+                🌞
+            </div>
+            11°
+          </p>
+        </div>
+        <div class="col-2">
+            <p class="day-4">
+            Tue
+            <div class="emoji day-4-emoji">
+                ☁️
+            </div>
+            9°
+          </p>
+        </div>
+        <div class="col-2">
+            <p class="day-5">
+            Wed
+            <div class="emoji day-5-emoji">
+                ❄️
+            </div>
+            5°
+          </p>
+        </div>
+      </div>
+      </section>
+    </div>
+    <script src = "javascript/weather.js"></script>
+  </body>
+</html>
